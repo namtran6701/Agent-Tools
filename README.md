@@ -1,6 +1,6 @@
 # Yahoo Finance Agent
 
-This notebook demonstrates how to use the Yahoo Finance API to create a financial analysis agent using LangChain and OpenAI's language models. The agent can retrieve news, perform fundamental analysis, and provide insights on stocks.
+This notebook `Financial_Analyst_Agentic` demonstrates how to use the Yahoo Finance API to create a financial analysis tool using LangChain and OpenAI's language models. The tool can be easily integrated to a Lang Graph Agentic framework and can retrieve news, perform fundamental analysis, and provide insights on stocks.
 
 ## Features
 
@@ -47,14 +47,32 @@ To use the agent, simply run the cells in order. You can modify the stock ticker
 
 ## Examples
 
-**Get recent news about Morgan Stanley:**
+Here are some examples of how to use the main functions in this notebook:
 
-stock_news('Morgan Stanley')
+### Get recent news about a company
 
-**Perform fundamental analysis on Intel: **
+To retrieve recent news articles about a specific company, use the `stock_news()` function:
 
-stock_financial('intel')
+```python
+# Get recent news about Morgan Stanley
+news_articles = stock_news('Morgan Stanley')
 
+# This will return a list of recent news articles related to Morgan Stanley
+```
+
+### Perform fundamental analysis on a stock
+
+To conduct a comprehensive fundamental analysis on a given stock, use the `stock_financial()` function:
+
+```python
+# Perform fundamental analysis on Intel
+analysis_result = stock_financial('intel')
+
+# This will return a detailed report including financial ratios, growth rates,
+# valuation metrics, future estimates, and a simple DCF valuation for Intel
+```
+
+Both functions will provide detailed output in a structured format, making it easy to analyze and interpret the results.
 
 
 ## Note
