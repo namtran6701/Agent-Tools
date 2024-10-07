@@ -47,10 +47,12 @@ To use the agent, simply run the cells in order. You can modify the stock ticker
 
 ## Examples
 
-**Get recent news about Morgan Stanley**
+**Get recent news about Morgan Stanley:**
+
 stock_news('Morgan Stanley')
 
-**Perform fundamental analysis on Intel**
+**Perform fundamental analysis on Intel: **
+
 stock_financial('intel')
 
 
